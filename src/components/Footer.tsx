@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <footer className="mt-10 px-4 flex flex-col items-center justify-center py-5 bg-white border-t border-yellow-100">
       <div className="flex items-center justify-center mt-8">
-        <div className="mr-10">
+        <div className="mr-3 sm:mr-10">
           <Link
             to="/"
             className="text-yellow-500 text-xl font-bold font-pacifico cursor-pointer"
@@ -30,11 +30,11 @@ const Header = () => {
         </div>
         <ul className="flex items-center justify-center font-medium">
           {links.map(({ name, path }) => (
-            <li className="px-3">
+            <li className="px-1 sm:px-3">
               <NavLink
                 to={path}
                 exact
-                className="font-semibold text-gray-700 hover:text-yellow-500"
+                className="text-sm font-semibold text-gray-700 hover:text-yellow-500  whitespace-nowrap"
                 activeClassName="text-red text-yellow-500"
               >
                 {name}
@@ -44,10 +44,10 @@ const Header = () => {
         </ul>
       </div>
 
-      <div className="mt-4 cursor-default text-gray-700">
+      <div className="mt-4 cursor-default text-gray-700 text-sm">
         Made with 💜 by{" "}
         <a
-          className="cursor-pointer text-sm font-semibold hover:underline hover:text-yellow-500"
+          className="cursor-pointer font-semibold hover:underline hover:text-yellow-500"
           href="https://twitter.com/theesophiyah"
         >
           Sophiyat Sadiq

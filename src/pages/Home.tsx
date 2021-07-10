@@ -20,7 +20,7 @@ const Home = () => {
             initial={{ opacity: 0, translateY: 10 }}
             animate={{ opacity: 1, translateY: 0 }}
             transition={{ duration: 0.3 }}
-            className="text-5xl text-center font-bold mb-2 max-w-2xl text-white"
+            className="text-3xl sm:text-5xl text-center font-bold mb-2 max-w-sm sm:max-w-2xl text-white"
           >
             Get recommendations for your next Electronics purchase
           </motion.h1>
@@ -28,7 +28,7 @@ const Home = () => {
             initial={{ opacity: 0, translateY: 5 }}
             animate={{ opacity: 1, translateY: 0 }}
             transition={{ duration: 0.3 }}
-            className="text-center text-xl mt-2 text-white"
+            className="text-center text-xl mt-2 text-white max-w-sm sm:max-w-2xl"
           >
             An online electronics recommender system made for you
           </motion.p>
@@ -37,7 +37,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-8 px-10 transform -translate-y-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4  gap-8 px-10 transform -translate-y-16">
         <ItemCard />
         <ItemCard />
         <ItemCard />
@@ -53,7 +53,7 @@ const Home = () => {
       </div>
 
       <div className="w-full flex items-center justify-center py-5">
-        <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:shadow-lg focus:ring-yellow-200 focus:ring-4">
+        <button className="bg-yellow-500 hover:bg-yellow-600 text-white text-md font-bold py-2 rounded-lg shadow-md hover:shadow-lg focus:ring-yellow-200 focus:ring-4 px-5">
           Load more
         </button>
       </div>

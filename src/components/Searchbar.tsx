@@ -1,6 +1,6 @@
 const Searchbar = () => {
   return (
-    <div className="flex items-center justify-center my-10 relative w-1/2">
+    <div className="flex items-center justify-center my-10 relative w-11/12 sm:w-11/12 md:w-11/12 lg:w-1/2">
       <input
         type="search"
         placeholder="Search for electronics recommendations"
