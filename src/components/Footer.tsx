@@ -19,8 +19,8 @@ const Header = () => {
 
   return (
     <footer className="mt-10 px-4 flex flex-col items-center justify-center py-5 bg-white border-t border-yellow-100">
-      <div className="flex items-center justify-center mt-8">
-        <div className="mr-3 sm:mr-10">
+      <div className="flex flex-col sm:flex-row items-center justify-center mt-8">
+        <div className="sm:mr-10 mb-4 sm:mb-0">
           <Link
             to="/"
             className="text-yellow-500 text-xl font-bold font-pacifico cursor-pointer"
@@ -34,7 +34,7 @@ const Header = () => {
               <NavLink
                 to={path}
                 exact
-                className="text-sm font-semibold text-gray-700 hover:text-yellow-500  whitespace-nowrap"
+                className="text-sm font-semibold text-gray-700 hover:text-yellow-500 hover:underline  whitespace-nowrap"
                 activeClassName="text-red text-yellow-500"
               >
                 {name}

@@ -10,7 +10,7 @@ const ItemCard = () => {
         src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_TV_2X._SY608_CB432517900_.jpg"
       />
       <Link
-        className="block pt-3 font-semibold text-yellow-600 hover:text-yellow-400"
+        className="block pt-3 font-semibold text-yellow-600 hover:text-yellow-400 hover:underline"
         to="/view/id"
       >
         View &#8594;

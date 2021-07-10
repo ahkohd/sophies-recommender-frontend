@@ -1,13 +1,13 @@
 const Searchbar = () => {
   return (
-    <div className="flex items-center justify-center my-10 relative w-11/12 sm:w-11/12 md:w-11/12 lg:w-1/2">
+    <div className="flex items-center justify-center my-10 relative w-11/12 sm:w-11/12 md:w-11/12 lg:w-1/2 group">
       <input
         type="search"
         placeholder="Search for electronics recommendations"
-        className="w-full rounded-lg px-5 py-4"
+        className="w-full rounded-lg px-5 py-4 focus:outline-none focus:ring-2 focus:ring-yellow-500"
       />
       <svg
-        className="absolute hover:text-yellow-500"
+        className="absolute group-focus:text-yellow-500"
         style={{ top: "calc(50% - 24px /2)", right: "20px" }}
         xmlns="http://www.w3.org/2000/svg"
         width="24"
