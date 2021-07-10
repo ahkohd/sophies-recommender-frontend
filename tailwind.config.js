@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         "black-light": "#2c2c2c",
       },
+      fontFamily: {
+        pacifico: "Pacifico",
+      },
     },
   },
   variants: {

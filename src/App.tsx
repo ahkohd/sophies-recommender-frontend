@@ -1,11 +1,10 @@
-import React from "react";
-import Toolbar from "@/components/Toolbar";
+import Routes from "./Routes";
 
 function App() {
   return (
-    <div className="App h-screen bg-gray-200">
-      <Toolbar />
-    </div>
+    <>
+      <Routes />
+    </>
   );
 }
 

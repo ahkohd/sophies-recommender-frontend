@@ -13,11 +13,14 @@
     "@types/react": "17.0.1",
     "@types/react-dom": "17.0.0",
     "autoprefixer": "9.8.6",
+    "axios": "^0.21.1",
+    "framer-motion": "^4.1.17",
     "node-sass": "5.0.0",
     "postcss": "7.0.35",
     "postcss-cli": "7.1.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript": "4.1.5",
@@ -56,6 +59,7 @@
     "@storybook/node-logger": "6.1.17",
     "@storybook/preset-create-react-app": "3.1.5",
     "@storybook/react": "6.1.17",
+    "@types/react-router-dom": "^5.1.8",
     "craco-alias": "2.1.1"
   }
 }
