@@ -1,10 +1,18 @@
-const Searchbar = () => {
+import { ChangeEvent, RefObject } from "react";
+
+interface SearchbarProps {
+  onChange(e: ChangeEvent): void;
+  inputRef: RefObject<HTMLInputElement>;
+}
+const Searchbar = ({ onChange, inputRef }: SearchbarProps) => {
   return (
     <div className="flex items-center justify-center my-10 relative w-11/12 sm:w-11/12 md:w-11/12 lg:w-1/2 group">
       <input
+        ref={inputRef}
         type="search"
-        placeholder="Search for electronics recommendations"
+        placeholder="Search for products"
         className="w-full rounded-lg px-5 py-4 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+        onChange={onChange}
       />
       <svg
         className="absolute group-focus:text-yellow-500"

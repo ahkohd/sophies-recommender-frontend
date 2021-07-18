@@ -7,10 +7,6 @@ const Header = () => {
       path: "/",
     },
     {
-      name: "Products",
-      path: "/products",
-    },
-    {
       name: "How It Works",
       path: "/how-it-works",
     },
@@ -31,8 +27,11 @@ const Header = () => {
         </Link>
       </div>
       <ul className="flex items-center justify-center font-medium">
-        {links.map(({ name, path }) => (
-          <li className="px-1 sm:px-3 overflow-hidden overflow-ellipsis">
+        {links.map(({ name, path }, idx) => (
+          <li
+            key={idx}
+            className="px-1 sm:px-3 overflow-hidden overflow-ellipsis"
+          >
             <NavLink
               to={path}
               exact

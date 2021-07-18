@@ -1,2 +1,18 @@
 @import "./base";
 @import "./reset";
+
+.rodal-dialog {
+  border-radius: 10px !important;
+}
+
+.page-modal {
+  .rodal-dialog {
+    width: 85vw !important;
+    min-height: 79vh !important;
+    max-height: 85vh !important;
+  }
+
+  .rodal-close {
+    display: none;
+  }
+}
